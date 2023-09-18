@@ -9368,6 +9368,10 @@ body.active {
   z-index: 3;
   margin-bottom: 3rem !important; }
 
+.category-btn.active {
+  color: var(--bright-blue) !important;
+  font-weight: 600; }
+
 .category-item {
   font-size: 1.6rem;
   color: var(--bs-dark-border-subtle); }

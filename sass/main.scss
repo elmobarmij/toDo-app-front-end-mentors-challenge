@@ -77,17 +77,24 @@ body.active {
   display: none !important;
 }
 
-.form-container::before {
-  content: "";
-  position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid var(--cercle-color);
-  left: 2rem;
-  z-index: 3;
-  margin-bottom: 3rem !important;
+.form-container {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--cercle-color);
+    left: 2rem;
+    z-index: 3;
+    margin-bottom: 3rem !important;
+  }
+}
+
+.category-btn.active {
+  color: var(--bright-blue) !important;
+  font-weight: 600;
 }
 
 .category-item {

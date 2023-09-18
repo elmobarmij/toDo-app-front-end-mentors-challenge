@@ -181,3 +181,18 @@ const createTodo = function () {
   };
 };
 createTodo();
+
+const toggleCategoryBtns = function () {
+  const categoryBtns = document.querySelectorAll(".category-btn");
+  categoryBtns.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      categoryBtns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      !e.target.classList.contains("active")
+        ? e.target.classList.add("active")
+        : e.target.classList.remove("active");
+    });
+  });
+};
+toggleCategoryBtns();
